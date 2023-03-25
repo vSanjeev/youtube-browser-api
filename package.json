@@ -4,7 +4,7 @@
 	"private": false,
 	"scripts": {
 		"dev": "set NODE_OPTIONS=--inspect && vite dev",
-		"build": "rimraf dist && rimraf .netlify/!(state.json) && vite build",
+		"build": "rimraf dist && rimraf .netlify/\!(state.json) && vite build",
 		"preview": "vite preview",
 		"check-netlify-deploy": "set CI=; && npm run build && netlify deploy",
 		"package": "vite build --config vite.config.package.ts --watch",
